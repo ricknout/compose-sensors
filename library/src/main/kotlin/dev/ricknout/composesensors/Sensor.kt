@@ -99,10 +99,10 @@ fun <T> rememberSensorValueAsState(
         )
     }
     val sensorEvent by sensorEventCallbackFlow.collectAsStateWithLifecycle(
-        initialValue = null,
+        initialValue = ComposableSensorEvent(),
         minActiveState = Lifecycle.State.RESUMED,
     )
-    return remember { derivedStateOf { transformSensorEvent(sensorEvent) } }
+    return remember { derivedStateOf { transformSensorEvent(sensorEvent.event) } }
 }
 
 /**
@@ -154,14 +154,15 @@ internal fun sensorEventCallbackFlow(
     context: Context,
     type: Int,
     samplingPeriodUs: Int,
-): Flow<SensorEvent> = callbackFlow {
+): Flow<ComposableSensorEvent> = callbackFlow {
     val sensorManager = ContextCompat.getSystemService(context, SensorManager::class.java)
         ?: throw RuntimeException("SensorManager is null")
     val sensor = sensorManager.getDefaultSensor(type)
         ?: throw RuntimeException("Sensor of type $type is not available, use one of the isSensorAvailable functions")
     val listener = object : SensorEventListener {
         override fun onSensorChanged(event: SensorEvent) {
-            trySend(event)
+            val composableEvent = ComposableSensorEvent(event = event)
+            trySend(composableEvent)
         }
         override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
             // TODO: Handle sensor accuracy changes?
@@ -171,3 +172,14 @@ internal fun sensorEventCallbackFlow(
     if (!successful) throw RuntimeException("Failed to register listener for sensor ${sensor.name}")
     awaitClose { sensorManager.unregisterListener(listener) }
 }
+
+/**
+ * Internal class used to wrap [SensorEvent] and trigger recompositions via [SensorEvent.timestamp].
+ *
+ * @param event The [SensorEvent].
+ * @param timestamp The [SensorEvent.timestamp].
+ */
+internal data class ComposableSensorEvent(
+    val event: SensorEvent? = null,
+    val timestamp: Long = event?.timestamp ?: SystemClock.elapsedRealtimeNanos()
+)
