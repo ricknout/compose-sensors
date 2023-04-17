@@ -181,5 +181,5 @@ internal fun sensorEventCallbackFlow(
  */
 internal data class ComposableSensorEvent(
     val event: SensorEvent? = null,
-    val timestamp: Long = event?.timestamp ?: SystemClock.elapsedRealtimeNanos()
+    val timestamp: Long = event?.timestamp ?: SystemClock.elapsedRealtimeNanos(),
 )
