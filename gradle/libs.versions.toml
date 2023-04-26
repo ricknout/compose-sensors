@@ -1,9 +1,9 @@
 [versions]
 androidGradlePlugin = "8.0.0"
-androidxActivity = "1.7.0"
-androidxComposeBom = "2023.04.00"
-androidxComposeCompiler = "1.4.5"
-androidxComposeMaterial3 = "1.1.0-beta02"
+androidxActivity = "1.7.1"
+androidxComposeBom = "2023.04.01"
+androidxComposeCompiler = "1.4.6"
+androidxComposeMaterial3 = "1.1.0-rc01"
 androidxCore = "1.10.0"
 androidxLifecycle = "2.6.1"
 androidxTestEspresso = "3.5.1"
