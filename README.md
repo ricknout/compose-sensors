@@ -3,6 +3,9 @@
 This library is a thin wrapper around the [Android Sensor APIs](https://developer.android.com/guide/topics/sensors/sensors_overview),
 designed to make it easier to work with them in [Jetpack Compose](https://developer.android.com/jetpack/compose).
 
+| ![Accelerometer](art/accelerometer.gif) | ![Light](art/light.gif) | ![Proximity](art/proximity.gif) |
+|-----------------------------------------|-------------------------|---------------------------------|
+
 ## Usage
 
 ### Dependency
