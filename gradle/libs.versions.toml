@@ -8,6 +8,7 @@ androidxCore = "1.10.0"
 androidxLifecycle = "2.6.1"
 androidxTestEspresso = "3.5.1"
 androidxTestExt = "1.1.5"
+gradleMavenPublish = "0.25.2"
 junit = "4.13.2"
 kotlin = "1.8.20"
 ktlint = "0.48.2"
@@ -28,5 +29,6 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+gradle-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "gradleMavenPublish" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
