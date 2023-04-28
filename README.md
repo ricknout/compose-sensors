@@ -18,7 +18,7 @@ dependencies {
 }
 ```
 
-The library is available via `mavenCentral`.
+The library is available via `mavenCentral()`. Versions can be found on the [releases page](https://github.com/ricknout/compose-sensors/releases).
 
 ### Core APIs
 
