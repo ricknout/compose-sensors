@@ -34,7 +34,7 @@ mavenPublishing {
     coordinates(
         groupId = "dev.ricknout.composesensors",
         artifactId = "composesensors",
-        version = "0.1.0-SNAPSHOT"
+        version = "0.1.0"
     )
     pom {
         name.set("Compose Sensors")
