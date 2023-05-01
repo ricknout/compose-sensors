@@ -14,7 +14,7 @@ In module `build.gralde.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("dev.ricknout.composesensors:$version")
+    implementation("dev.ricknout.composesensors:composesensors:$version")
 }
 ```
 
