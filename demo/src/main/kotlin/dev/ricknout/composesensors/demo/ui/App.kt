@@ -21,6 +21,7 @@ import androidx.compose.ui.res.stringResource
 import dev.ricknout.composesensors.demo.R
 import dev.ricknout.composesensors.demo.model.Demo
 import dev.ricknout.composesensors.demo.ui.accelerometer.AccelerometerDemo
+import dev.ricknout.composesensors.demo.ui.gravity.GravityDemo
 import dev.ricknout.composesensors.demo.ui.gyroscope.GyroscopeDemo
 import dev.ricknout.composesensors.demo.ui.light.LightDemo
 import dev.ricknout.composesensors.demo.ui.magneticfield.MagneticFieldDemo
@@ -68,6 +69,7 @@ fun DemoNavigation(
         when (it) {
             Demo.NONE -> DemoApp(onItemClick = onItemClick)
             Demo.ACCELEROMETER -> AccelerometerDemo()
+            Demo.GRAVITY -> GravityDemo()
             Demo.GYROSCOPE -> GyroscopeDemo()
             Demo.LIGHT -> LightDemo()
             Demo.MAGNETIC_FIELD -> MagneticFieldDemo()
