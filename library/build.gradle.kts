@@ -29,7 +29,10 @@ android {
 }
 
 mavenPublishing {
-    publishToMavenCentral(SonatypeHost.S01)
+    publishToMavenCentral(
+        host = SonatypeHost.S01,
+        automaticRelease = true
+    )
     signAllPublications()
     coordinates(
         groupId = "dev.ricknout.composesensors",
