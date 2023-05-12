@@ -9,6 +9,7 @@ enum class Demo(
 ) {
     NONE("", View.NO_ID),
     ACCELEROMETER("Accelerometer", R.drawable.ic_accelerometer_24dp),
+    AMBIENT_TEMPERATURE("Ambient Temperature", R.drawable.ic_ambient_temperature_24dp),
     GRAVITY("Gravity", R.drawable.ic_gravity_24dp),
     GYROSCOPE("Gyroscope", R.drawable.ic_gyroscope_24dp),
     LIGHT("Light", R.drawable.ic_light_24dp),
