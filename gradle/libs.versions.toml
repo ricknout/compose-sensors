@@ -1,10 +1,9 @@
 [versions]
 androidGradlePlugin = "8.0.1"
 androidxActivity = "1.7.1"
-androidxComposeBom = "2023.05.00"
+androidxComposeBom = "2023.05.01"
 androidxComposeCompiler = "1.4.7"
-androidxComposeMaterial3 = "1.1.0-rc01"
-androidxCore = "1.10.0"
+androidxCore = "1.10.1"
 androidxLifecycle = "2.6.1"
 androidxTestEspresso = "3.5.1"
 androidxTestExt = "1.1.5"
@@ -17,7 +16,7 @@ spotless = "6.18.0"
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
-androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial3" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
