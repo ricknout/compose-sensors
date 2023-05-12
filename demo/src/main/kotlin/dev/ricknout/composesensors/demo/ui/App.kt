@@ -28,6 +28,7 @@ import dev.ricknout.composesensors.demo.ui.linearacceleration.LinearAcceleration
 import dev.ricknout.composesensors.demo.ui.magneticfield.MagneticFieldDemo
 import dev.ricknout.composesensors.demo.ui.pressure.PressureDemo
 import dev.ricknout.composesensors.demo.ui.proximity.ProximityDemo
+import dev.ricknout.composesensors.demo.ui.relativehumidity.RelativeHumidityDemo
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
@@ -77,6 +78,7 @@ fun DemoNavigation(
             Demo.MAGNETIC_FIELD -> MagneticFieldDemo()
             Demo.PRESSURE -> PressureDemo()
             Demo.PROXIMITY -> ProximityDemo()
+            Demo.RELATIVE_HUMIDITY -> RelativeHumidityDemo()
         }
     }
 }

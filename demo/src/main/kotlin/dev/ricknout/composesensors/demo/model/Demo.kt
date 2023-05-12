@@ -16,4 +16,5 @@ enum class Demo(
     MAGNETIC_FIELD("Magnetic Field", R.drawable.ic_magnetic_field_24dp),
     PRESSURE("Pressure", R.drawable.ic_pressure_24dp),
     PROXIMITY("Proximity", R.drawable.ic_proximity_24dp),
+    RELATIVE_HUMIDITY("Relative Humidity", R.drawable.ic_relative_humidity_24dp),
 }
