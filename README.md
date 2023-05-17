@@ -61,18 +61,18 @@ val (x, y, z) = sensorValue.value
 
 The following sensor types are available:
 
-| Type                | Availability                          | Sensor                        | Sensor value                                   |
-|---------------------|---------------------------------------|-------------------------------|------------------------------------------------|
-| Accelerometer       | `isAccelerometerSensorAvailable`      | `getAccelerometerSensor`      | `rememberAccelerometerSensorValueAsState`      |
-| Ambient Temperature | `isAmbientTemperatureSensorAvailable` | `getAmbientTemperatureSensor` | `rememberAmbientTemperatureSensorValueAsState` |
-| Gravity             | `isGravitySensorAvailable`            | `getGravitySensor`            | `rememberGravitySensorValueAsState`            |
-| Gyroscope           | `isGyroscopeSensorAvailable`          | `getGyroscopeSensor`          | `rememberGyroscopeSensorValueAsState`          |
-| Light               | `isLightSensorAvailable`              | `getLightSensor`              | `rememberLightSensorValueAsState`              |
-| Linear Acceleration | `isLinearAccelerationSensorAvailable` | `getLinearAccelerationSensor` | `rememberLinearAccelerationSensorValueAsState` |
-| Magnetic field      | `isMagneticFieldSensorAvailable`      | `getMagneticFieldSensor`      | `rememberMagneticFieldSensorValueAsState`      |
-| Pressure            | `isPressureSensorAvailable`           | `getPressureSensor`           | `rememberPressureSensorValueAsState`           |
-| Proximity           | `isProximitySensorAvailable`          | `getProximitySensor`          | `rememberProximitySensorValueAsState`          |
-| Relative Humidity   | `isRelativeHumiditySensorAvailable`   | `getRelativeHumiditySensor`   | `rememberRelativeHumiditySensorValueAsState`   |
+| Type                    | Availability                          | Sensor                        | Sensor value                                   |
+|-------------------------|---------------------------------------|-------------------------------|------------------------------------------------|
+| ⏩ Accelerometer         | `isAccelerometerSensorAvailable`      | `getAccelerometerSensor`      | `rememberAccelerometerSensorValueAsState`      |
+| 🌡️ Ambient Temperature | `isAmbientTemperatureSensorAvailable` | `getAmbientTemperatureSensor` | `rememberAmbientTemperatureSensorValueAsState` |
+| ⏬ Gravity               | `isGravitySensorAvailable`            | `getGravitySensor`            | `rememberGravitySensorValueAsState`            |
+| 🔄 Gyroscope            | `isGyroscopeSensorAvailable`          | `getGyroscopeSensor`          | `rememberGyroscopeSensorValueAsState`          |
+| 💡 Light                | `isLightSensorAvailable`              | `getLightSensor`              | `rememberLightSensorValueAsState`              |
+| ⏪ Linear Acceleration   | `isLinearAccelerationSensorAvailable` | `getLinearAccelerationSensor` | `rememberLinearAccelerationSensorValueAsState` |
+| 🧲 Magnetic field       | `isMagneticFieldSensorAvailable`      | `getMagneticFieldSensor`      | `rememberMagneticFieldSensorValueAsState`      |
+| 💨 Pressure             | `isPressureSensorAvailable`           | `getPressureSensor`           | `rememberPressureSensorValueAsState`           |
+| 🔛 Proximity            | `isProximitySensorAvailable`          | `getProximitySensor`          | `rememberProximitySensorValueAsState`          |
+| 💧 Relative Humidity    | `isRelativeHumiditySensorAvailable`   | `getRelativeHumiditySensor`   | `rememberRelativeHumiditySensorValueAsState`   |
 
 Watch this space, more types to come!
 
