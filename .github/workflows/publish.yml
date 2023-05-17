@@ -8,6 +8,7 @@ on:
 jobs:
   publish-library-to-maven:
     runs-on: ubuntu-latest
+    environment: Environment
     steps:
       - name: Checkout
         uses: actions/checkout@v3
